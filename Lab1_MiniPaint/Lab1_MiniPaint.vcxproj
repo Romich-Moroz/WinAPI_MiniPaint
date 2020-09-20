@@ -142,6 +142,17 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Icons\brush.ico" />
+    <Image Include="Icons\color.ico" />
+    <Image Include="Icons\curv.ico" />
+    <Image Include="Icons\elps.ico" />
+    <Image Include="Icons\line.ico" />
+    <Image Include="Icons\poly.ico" />
+    <Image Include="Icons\rect.ico" />
+    <Image Include="Icons\text.ico" />
+    <Image Include="Icons\width.ico" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

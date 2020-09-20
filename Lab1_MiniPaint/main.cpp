@@ -63,14 +63,14 @@ void CreateToolbar(PMainWindow p) {
 	p->hImageList = ImageList_Create(bitmapSize, bitmapSize, ILC_MASK, numButtons, 0);	
 	SendMessage(p->hWndToolbar, TB_SETIMAGELIST, (WPARAM)ImageListID, (LPARAM)p->hImageList);
 
-	p->imgLine = (HICON)LoadImage(NULL, _T("line.ico"), IMAGE_ICON, 0, 0, LR_LOADFROMFILE);
-	p->imgCurved = (HICON)LoadImage(NULL, _T("curv.ico"), IMAGE_ICON, 0, 0, LR_LOADFROMFILE);
-	p->imgRect = (HICON)LoadImage(NULL, _T("rect.ico"), IMAGE_ICON, 0, 0, LR_LOADFROMFILE);
-	p->imgPentagon = (HICON)LoadImage(NULL, _T("pent.ico"), IMAGE_ICON, 0, 0, LR_LOADFROMFILE);
-	p->imgEllipse = (HICON)LoadImage(NULL, _T("elps.ico"), IMAGE_ICON, 0, 0, LR_LOADFROMFILE);
-	p->imgText = (HICON)LoadImage(NULL, _T("text.ico"), IMAGE_ICON, 0, 0, LR_LOADFROMFILE);
-	p->imgColor = (HICON)LoadImage(NULL, _T("color.ico"), IMAGE_ICON, 0, 0, LR_LOADFROMFILE);
-	p->imgBrush = (HICON)LoadImage(NULL, _T("brush.ico"), IMAGE_ICON, 0, 0, LR_LOADFROMFILE);
+	p->imgLine = (HICON)LoadImage(NULL, _T("..\\Lab1_MiniPaint\\Icons\\line.ico"), IMAGE_ICON, 0, 0, LR_LOADFROMFILE);
+	p->imgCurved = (HICON)LoadImage(NULL, _T("..\\Lab1_MiniPaint\\Icons\\curv.ico"), IMAGE_ICON, 0, 0, LR_LOADFROMFILE);
+	p->imgRect = (HICON)LoadImage(NULL, _T("..\\Lab1_MiniPaint\\Icons\\rect.ico"), IMAGE_ICON, 0, 0, LR_LOADFROMFILE);
+	p->imgPentagon = (HICON)LoadImage(NULL, _T("..\\Lab1_MiniPaint\\Icons\\poly.ico"), IMAGE_ICON, 0, 0, LR_LOADFROMFILE);
+	p->imgEllipse = (HICON)LoadImage(NULL, _T("..\\Lab1_MiniPaint\\Icons\\elps.ico"), IMAGE_ICON, 0, 0, LR_LOADFROMFILE);
+	p->imgText = (HICON)LoadImage(NULL, _T("..\\Lab1_MiniPaint\\Icons\\text.ico"), IMAGE_ICON, 0, 0, LR_LOADFROMFILE);
+	p->imgColor = (HICON)LoadImage(NULL, _T("..\\Lab1_MiniPaint\\Icons\\color.ico"), IMAGE_ICON, 0, 0, LR_LOADFROMFILE);
+	p->imgBrush = (HICON)LoadImage(NULL, _T("..\\Lab1_MiniPaint\\Icons\\brush.ico"), IMAGE_ICON, 0, 0, LR_LOADFROMFILE);
 
 	ImageList_AddIcon(p->hImageList, p->imgLine);
 	ImageList_AddIcon(p->hImageList, p->imgCurved);

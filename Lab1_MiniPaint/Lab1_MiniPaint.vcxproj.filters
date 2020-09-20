@@ -19,4 +19,33 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Icons\width.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Icons\text.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Icons\rect.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Icons\line.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Icons\elps.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Icons\curv.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Icons\color.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Icons\brush.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Icons\poly.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
 </Project>
