@@ -144,9 +144,8 @@ void DrawFigure(PMainWindow p, bool isPreview) {
 			break;
 		case Figures::Poly:
 			graphics.DrawLine(&pen, p->from, p->to);
-			if (!isPreview) {
 				graphics.FillPolygon(&brush, &poly[0], poly.size());
-			}
+			
 			break;
 		case Figures::Elps:
 			graphics.DrawEllipse(&pen, p->from.X, p->from.Y, p->to.X - p->from.X, p->to.Y - p->from.Y);
@@ -280,6 +279,9 @@ LRESULT CALLBACK WndProc(_In_ HWND   hWnd, _In_ UINT   uMsg, _In_ WPARAM wParam,
 			if (pSelf->isDrawing) {
 				if (pSelf->selectedFigure == Figures::Poly) {
 					if (poly.size()>=3) {
+						pSelf->to.X = LOWORD(lParam);
+						pSelf->to.Y = HIWORD(lParam);
+						poly.push_back(pSelf->to);
 						pSelf->from = poly[poly.size() - 1];
 						pSelf->to.X = poly[0].X;
 						pSelf->to.Y = poly[0].Y;
